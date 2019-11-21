@@ -1,0 +1,17 @@
+{
+  "name": "I Am NOT That Bad at Fantasy Basketball",
+  "version": "1.0.0",
+  "description": "Use this extension to pat yourself on the back when you get 0-9 in fantasy basketball.",
+  "permissions": ["declarativeContent", "storage"],
+  "background": {
+    "scripts": ["build/background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://basketball.fantasysports.yahoo.com/nba/*/matchup"],
+      "js": ["build/content.js"]
+    }
+  ],
+  "manifest_version": 2
+}

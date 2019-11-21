@@ -1,0 +1,50 @@
+{
+  "name": "i-am-not-that-bad-at-fantasy-basketball",
+  "version": "1.0.0",
+  "description": "",
+  "harry": {
+    "srcDir": "./src",
+    "destDir": "./build"
+  },
+  "main": "",
+  "scripts": {
+    "build": "NODE_ENV=production babel $npm_package_harry_srcDir --out-dir $npm_package_harry_destDir",
+    "dev": "NODE_ENV=development babel --watch $npm_package_harry_srcDir --out-dir $npm_package_harry_destDir"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harry830622/i-am-not-that-bad-at-fantasy-basketball.git"
+  },
+  "author": "Harry Chang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/harry830622/i-am-not-that-bad-at-fantasy-basketball/issues"
+  },
+  "homepage": "https://github.com/harry830622/i-am-not-that-bad-at-fantasy-basketball#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-proposal-nullish-coalescing-operator": "^7.4.4",
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
+    "@babel/plugin-proposal-pipeline-operator": "^7.5.0",
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-styled-components": "^1.10.6",
+    "dotenv": "^8.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.1.0",
+    "lint-staged": "^9.4.3",
+    "prettier": "^1.19.1",
+    "styled-components": "^4.4.1"
+  }
+}
