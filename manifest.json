@@ -1,7 +1,14 @@
 {
   "name": "I Am NOT That Bad at Fantasy Basketball",
   "version": "1.0.0",
-  "description": "Use this extension to pat yourself on the back when you get 0-9 in fantasy basketball.",
+  "description": "Are you down in the current matchup? Don't be sad. There must be a team worse than you.",
+  "icons": {
+    "16": "assets/icons/icon_16.png",
+    "32": "assets/icons/icon_32.png",
+    "48": "assets/icons/icon_48.png",
+    "128": "assets/icons/icon_128.png",
+    "512": "assets/icons/icon_512.png"
+  },
   "permissions": ["declarativeContent", "storage"],
   "background": {
     "scripts": ["build/background.js"],
@@ -9,7 +16,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://basketball.fantasysports.yahoo.com/nba/*/matchup"],
+      "matches": ["https://basketball.fantasysports.yahoo.com/nba/*/matchup?date=totals*"],
       "js": ["build/content.js"]
     }
   ],
